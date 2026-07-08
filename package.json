@@ -1,0 +1,32 @@
+{
+  "name": "meeting-room-booking-system",
+  "version": "1.0.0",
+  "description": "Meeting Room Booking System",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node server.ts"
+},
+  "keywords": [
+    "meeting",
+    "room",
+    "booking",
+    "express",
+    "mysql"
+  ],
+  "author": "Watcharadul",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.2",
+    "mysql2": "^3.22.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}

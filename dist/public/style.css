@@ -1,0 +1,247 @@
+/* =====================================
+   Meeting Room Booking System
+===================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    background:#f5f7fa;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* =====================================
+   Header
+===================================== */
+
+h1{
+
+    font-weight:bold;
+
+    color:#0d6efd;
+
+}
+
+h5{
+
+    font-weight:bold;
+
+}
+
+/* =====================================
+   Dashboard Card
+===================================== */
+
+.dashboard-card{
+
+    border:none;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+/* =====================================
+   Card
+===================================== */
+
+.card{
+
+    border-radius:15px;
+
+    border:none;
+
+}
+
+.card-header{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+/* =====================================
+   Form
+===================================== */
+
+.form-control{
+
+    border-radius:10px;
+
+}
+
+.form-select{
+
+    border-radius:10px;
+
+}
+
+.form-control:focus,
+
+.form-select:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 8px rgba(13,110,253,.3);
+
+}
+
+/* =====================================
+   Button
+===================================== */
+
+.btn{
+
+    border-radius:10px;
+
+    padding:10px 20px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* =====================================
+   Table
+===================================== */
+
+.table{
+
+    vertical-align:middle;
+
+}
+
+.table thead th{
+
+    text-align:center;
+
+}
+
+.table tbody td{
+
+    text-align:center;
+
+}
+
+/* =====================================
+   Badge
+===================================== */
+
+.badge{
+
+    font-size:13px;
+
+    padding:8px 12px;
+
+}
+
+/* =====================================
+   AI Message
+===================================== */
+
+#ai_message{
+
+    resize:none;
+
+    background:#eef7ff;
+
+    color:#0d6efd;
+
+    font-weight:bold;
+
+}
+
+/* =====================================
+   Footer
+===================================== */
+
+footer{
+
+    color:#777;
+
+    padding:20px;
+
+}
+
+/* =====================================
+   Animation
+===================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.card{
+
+    animation:fadeIn .5s ease;
+
+}
+
+/* =====================================
+   Responsive
+===================================== */
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        margin-top:10px;
+
+    }
+
+    .dashboard-card{
+
+        margin-bottom:15px;
+
+    }
+
+}

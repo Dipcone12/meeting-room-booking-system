@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>แก้ไขการจองห้องประชุม</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-warning text-dark">
+
+            <h3 class="mb-0">
+                ✏️ แก้ไขการจองห้องประชุม
+            </h3>
+
+        </div>
+
+        <div class="card-body">
+
+            <input type="hidden" id="booking_id">
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+                        ห้องประชุม
+                    </label>
+
+                    <select
+                        id="room_name"
+                        class="form-select">
+
+                        <option>Meeting Room A</option>
+
+                        <option>Meeting Room B</option>
+
+                        <option>Meeting Room C</option>
+
+                        <option>Board Room</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+                        หัวข้อประชุม
+                    </label>
+
+                    <input
+                        id="topic"
+                        type="text"
+                        class="form-control">
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+                        ผู้จอง
+                    </label>
+
+                    <input
+                        id="booker"
+                        type="text"
+                        class="form-control">
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+                        แผนก
+                    </label>
+
+                    <input
+                        id="department"
+                        type="text"
+                        class="form-control">
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+
+                    <label class="form-label">
+                        วันที่ประชุม
+                    </label>
+
+                    <input
+                        id="meeting_date"
+                        type="date"
+                        class="form-control">
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+
+                    <label class="form-label">
+                        เวลาเริ่ม
+                    </label>
+
+                    <input
+                        id="start_time"
+                        type="time"
+                        class="form-control">
+
+                </div>
+
+                <div class="col-md-4 mb-3">
+
+                    <label class="form-label">
+                        เวลาสิ้นสุด
+                    </label>
+
+                    <input
+                        id="end_time"
+                        type="time"
+                        class="form-control">
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+                        จำนวนผู้เข้าร่วม
+                    </label>
+
+                    <input
+                        id="participants"
+                        type="number"
+                        class="form-control">
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label class="form-label">
+                        สถานะ
+                    </label>
+
+                    <select
+                        id="status"
+                        class="form-select">
+
+                        <option>จองแล้ว</option>
+
+                        <option>ใกล้ถึงเวลา</option>
+
+                        <option>กำลังประชุม</option>
+
+                        <option>เสร็จสิ้น</option>
+
+                        <option>ยกเลิก</option>
+
+                    </select>
+
+                </div>
+
+                <div class="col-12 mb-3">
+
+                    <label class="form-label">
+                        🤖 AI Assistant
+                    </label>
+
+                    <textarea
+                        id="ai_message"
+                        class="form-control"
+                        rows="3"
+                        readonly></textarea>
+
+                </div>
+
+            </div>
+
+            <div class="text-center">
+
+                <button
+                    class="btn btn-success btn-lg"
+                    onclick="updateBooking()">
+
+                    💾 บันทึกการแก้ไข
+
+                </button>
+
+                <a
+                    href="/"
+                    class="btn btn-secondary btn-lg">
+
+                    ↩️ กลับหน้าหลัก
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="edit.js"></script>
+
+</body>
+
+</html>
